@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fincaudios</title>
+    <!-- Favicon -->
+    <link rel="icon" href="./logo.jpeg" type="image/x-icon" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Core theme CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Meta Description -->
+    <meta property="og:title" content="Fincaudios">
+    <meta property="og:description" content="Fincaudios - Los Audios de la Finca">
+    <meta property="og:image" content="./logo.jpeg">
+    <meta property="og:url" content="https://Fincaudios.com">
+    <meta property="og:type" content="website">
+
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FC75VVVF6V"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-FC75VVVF6V');
+
+    // Event Tracking Function
+    function trackButtonClick(eventLabel) {
+        gtag('event', 'button_click', {
+            'event_category': 'button_clicks',
+            'event_label': eventLabel
+        });
+    }
+</script>
+
+
+
+<body>
+
+    <a id="profilePicture">
+        <img src="./logo.jpeg" alt="Profile Picture">
+    </a>
+    <div id="userName">
+        Fincaudios
+    </div>
+
+    <div id="links">
+        <a class="link"
+            href="https://api.whatsapp.com/send?phone=+50662147490&text=Vengo%20a%20enviar%20un%20audio,%20el%20cual%20se%20trata%20de:%0A(Pon%20una%20breve%20descripción%20del%20audio)"
+            target="_blank" data-ga-label="Enviar audio de WhatsApp Clicked"
+            onclick="trackButtonClick(this.getAttribute('data-ga-label'))">
+            <i class="fa-brands fa-whatsapp">&nbsp;</i>Enviar audio de WhatsApp
+        </a>
+        <a class="link" href="https://www.instagram.com/fincaudios" target="_blank" data-ga-label="Instagram Clicked"
+            onclick="trackButtonClick(this.getAttribute('data-ga-label'))">
+            <i class="fab fa-instagram">&nbsp;</i>Instagram
+        </a>
+        <a class="link" href="https://www.tiktok.com/@fincaudios" target="_blank" data-ga-label="Tiktok Clicked"
+            onclick="trackButtonClick(this.getAttribute('data-ga-label'))">
+            <i class="fa-brands fa-tiktok">&nbsp;</i>Tiktok
+        </a>
+        <a class="link" href="https://www.youtube.com/@fincaudios/" target="_blank" data-ga-label="YouTube Clicked"
+            onclick="trackButtonClick(this.getAttribute('data-ga-label'))">
+            <i class="fa-brands fa-youtube">&nbsp;</i>YouTube
+        </a>
+        <a class="link" href="mailto:publicidad@fincaudios.com?subject=Publicidad%20-%20"
+            data-ga-label="Publicidad Clicked" onclick="trackButtonClick(this.getAttribute('data-ga-label'))">
+            <i class="fa-solid fa-earth-americas">&nbsp;</i>Publicidad
+        </a>
+        <a class="link" href="./donaciones" data-ga-label="Donaciones Clicked"
+            onclick="trackButtonClick(this.getAttribute('data-ga-label'))">
+            ♥️ Donaciones ♥️
+        </a>
+    </div>
+
+    <div id="hashtag">
+        #Fincaudios
+    </div>
+</body>
+
+</html>
