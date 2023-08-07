@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fincaudios | Donaciones ♥️ </title>
+  <!-- Favicon -->
+  <link rel="icon" href="./logo.jpeg" type="image/x-icon" />
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Core theme CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Meta Description -->
+
+  <meta property="og:title" content="Fincaudios - Donaciones">
+  <meta property="og:description" content="Fincaudios - Donaciones">
+  <meta property="og:image" content="./logo.jpeg">
+  <meta property="og:url" content="https://Fincaudios.com/donaciones">
+  <meta property="og:type" content="website">
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FC75VVVF6V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-FC75VVVF6V');
+
+  // Event Tracking Function
+  function trackButtonClick(eventLabel) {
+    gtag('event', 'button_click', {
+      'event_category': 'button_clicks',
+      'event_label': eventLabel
+    });
+  }
+</script>
+
+<body>
+  <a id="profilePicture">
+    <img src="./logo.jpeg" alt="Profile Picture">
+  </a>
+
+  <div id="userName">
+    Fincaudios
+  </div>
+  <div id="userName">
+    ♥️ Donaciones ♥️
+  </div>
+
+
+
+  <div id="links">
+    <a class="link" href="https://www.instagram.com/johnggli" target="_blank" data-ga-label="Sinpe Móvil Clicked"
+      onclick="trackButtonClick(this.getAttribute('data-ga-label'))">
+      <i class="fa-solid fa-mobile">&nbsp;</i>Sinpe Móvil: 6214 7490
+    </a>
+    <a class="link" href="https://www.instagram.com/johnggli" target="_blank" data-ga-label="Patreon Clicked"
+      onclick="trackButtonClick(this.getAttribute('data-ga-label'))">
+      <i class="fa-brands fa-patreon">&nbsp;</i>Patreon (Próximamente)
+    </a>
+    <a class="link" href="https://twitter.com/johnggli" target="_blank" data-ga-label="Buy Me a Coffee Clicked"
+      onclick="trackButtonClick(this.getAttribute('data-ga-label'))">
+      <i class="fa-solid fa-mug-saucer">&nbsp;</i>Buy Me a Coffee (Próximamente)
+    </a>
+    <a class="link" href="https://twitter.com/johnggli" target="_blank" data-ga-label="Con Tarjeta Clicked"
+      onclick="trackButtonClick(this.getAttribute('data-ga-label'))">
+      <i class="fa-solid fa-credit-card">&nbsp;</i>Con Tarjeta (Próximamente)
+    </a>
+  </div>
+</body>
+
+</html>
